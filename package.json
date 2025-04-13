@@ -6,11 +6,14 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "node --experimental-wasm-modules .output/server/index.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@bedard/hexchess": "2.0.0-beta.3",
+    "calculator": "link:calculator/pkg",
     "nuxt": "^3.16.2",
+    "vite-plugin-wasm": "^3.4.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   }
