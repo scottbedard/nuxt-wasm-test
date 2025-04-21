@@ -10,6 +10,6 @@ import { add } from 'calculator'
 const result = ref(0)
 
 onMounted(() => {
-  result.value = add(1, 2)
+  result.value = add(1, 6)
 })
 </script>
