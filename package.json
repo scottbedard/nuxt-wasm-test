@@ -6,7 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "node --experimental-wasm-modules .output/server/index.mjs",
+    "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -16,8 +16,6 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@rollup/plugin-inject": "^5.0.5",
-    "vite-plugin-top-level-await": "^1.5.0",
-    "vite-plugin-wasm": "^3.4.1"
+    "@rollup/plugin-inject": "^5.0.5"
   }
 }
