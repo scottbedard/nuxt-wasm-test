@@ -1,5 +1,6 @@
-import wasm from 'vite-plugin-wasm'
+import inject from '@rollup/plugin-inject'
 import topLevelAwait from 'vite-plugin-top-level-await'
+import wasm from 'vite-plugin-wasm'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -13,6 +14,13 @@ export default defineNuxtConfig({
   vite: {
     build: {
       target: 'esnext',
+      rollupOptions: {
+        plugins: [
+          inject({
+            exclude: ['**/*.wasm'],
+          })
+        ]
+      }
     },
     plugins: [
       wasm(),

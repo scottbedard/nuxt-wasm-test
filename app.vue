@@ -5,11 +5,13 @@
 </template>
 
 <script lang="ts" setup>
-import { add } from 'calculator'
+import init from 'calculator'
 
 const result = ref(0)
 
-onMounted(() => {
-  result.value = add(1, 6)
+onMounted(async () => {
+  const { add } = await init()
+
+  result.value = add(234, 6)
 })
 </script>
