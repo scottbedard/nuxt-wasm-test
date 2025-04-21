@@ -1,11 +1,15 @@
 <template>
   <div>
-    {{ Hexchess.init().toString()}} - <button @click="x++">{{ x }}</button>
+    {{ result }}
   </div>
 </template>
 
 <script lang="ts" setup>
-import { Hexchess } from '@bedard/hexchess';
+import { add } from 'calculator'
 
-const x = ref(0);
+const result = ref(0)
+
+onMounted(() => {
+  result.value = add(1, 2)
+})
 </script>

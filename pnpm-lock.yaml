@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@bedard/hexchess':
-        specifier: 2.0.0-beta.3
-        version: 2.0.0-beta.3
       calculator:
         specifier: link:calculator/pkg
         version: link:calculator/pkg
@@ -145,9 +142,6 @@ packages:
   '@babel/types@7.27.0':
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
-
-  '@bedard/hexchess@2.0.0-beta.3':
-    resolution: {integrity: sha512-Jlh+2d02qruTU7DJ6f3MUGyqeiUhtFb8Pkq3dVkQaxS8BQ1noFQRpDi5MSH6tbm27x3sjDMbz/RXxuzVEl66yA==}
 
   '@cloudflare/kv-asset-handler@0.4.0':
     resolution: {integrity: sha512-+tv3z+SPp+gqTIcImN9o0hqE9xyfQjI1XD9pL6NuKjua9B1y7mNYv0S9cP+QEbA4ppVgGZEmKOvHX5G5Ei1CVA==}
@@ -2972,8 +2966,6 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
-
-  '@bedard/hexchess@2.0.0-beta.3': {}
 
   '@cloudflare/kv-asset-handler@0.4.0':
     dependencies:

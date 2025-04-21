@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@bedard/hexchess": "2.0.0-beta.3",
     "calculator": "link:calculator/pkg",
     "nuxt": "^3.16.2",
     "vite-plugin-wasm": "^3.4.1",
