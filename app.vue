@@ -1,5 +1,7 @@
 <template>
   <div>
+    <input type="number" v-model="a" />
+    <input type="number" v-model="b" />
     {{ result }}
   </div>
 </template>
@@ -7,11 +9,14 @@
 <script lang="ts" setup>
 import init from 'calculator'
 
+const a = ref(0)
+const b = ref(0)
+
 const result = ref(0)
 
-onMounted(async () => {
+watch([a, b], async () => {
   const { add } = await init()
 
-  result.value = add(234, 6)
+  result.value = add(a.value, b.value)
 })
 </script>
